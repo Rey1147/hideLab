@@ -7,7 +7,7 @@ export const task2 = () => {
     const listInputs = {}
 
     const handleInput = () => {
-        document.querySelector('.task2Result')?.remove()
+        document.querySelector('.taskResult')?.remove()
         document.querySelector('.error')?.remove()
         button.classList?.remove('button-none')
     }
@@ -40,7 +40,7 @@ export const task2 = () => {
                 return
             }
 
-            const result = `<div class="task2Result">
+            const result = `<div class="taskResult">
                             <p>Площадь треугольника: <b/>${square}</b></p>
                             </div>`
             button.className = 'button-none'

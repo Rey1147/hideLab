@@ -6,7 +6,7 @@ export const task1 = () => {
     const listInputs = ['salaryInput1', 'salaryInput2', 'salaryInput3']
 
     const handleInput = () => {
-        document.querySelector('.task1Result')?.remove()
+        document.querySelector('.taskResult')?.remove()
         document.querySelector('.error')?.remove()
         button.classList?.remove('button-none')
     }
@@ -30,7 +30,7 @@ export const task1 = () => {
             return
         }
 
-        const result = `<div class="task1Result">
+        const result = `<div class="taskResult">
                         <p>Общая сумма зарплаты: <b/>${sum}</b></p>
                         <p>Процент от зарплаты: <b>${persent}</b></p>
                         <p>Сумма зарплаты с вычетом процента: <b>${withoutPersent}</b></p>
