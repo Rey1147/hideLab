@@ -17,14 +17,14 @@ export const tasks = [
         content: `<p class='task'>Введите координаты (x,y) трёх точек</p>
         <div class='inputForm2'>
             <label>Координаты первой точки:</label>
-            <input type="number" id="CoorX1">
-            <input type="number" id="CoorY1">
+            <input type="number" placeholder="x1" id="CoorX1">
+            <input type="number" placeholder="y1" id="CoorY1">
             <label>Координаты второй точки:</label>
-            <input type="number" id="CoorX2">
-            <input type="number" id="CoorY2">
+            <input type="number" placeholder="x2" id="CoorX2">
+            <input type="number" placeholder="y2" id="CoorY2">
             <label>Координаты третьей точки:</label>
-            <input type="number" id="CoorX3">
-            <input type="number" id="CoorY3">
+            <input type="number" placeholder="x3" id="CoorX3">
+            <input type="number" placeholder="y3" id="CoorY3">
         </div>
         <button id="getSquare">Рассчитать</button>
         `

@@ -1,54 +1,50 @@
 export const task2 = () => {
     const content = document.getElementById('content')
     const button = document.getElementById('getSquare')
+    const error = `<p class="error">Треугольник не может быть создан</p>`
 
-    document.getElementById('CoorX1').addEventListener('input', () => {
+    const listId = ['CoorX1', 'CoorX2', 'CoorX3', 'CoorY1', 'CoorY2', 'CoorY3']
+    const listInputs = {}
+
+    const handleInput = () => {
         document.querySelector('.task2Result')?.remove()
+        document.querySelector('.error')?.remove()
         button.classList?.remove('button-none')
-    })
-    document.getElementById('CoorX2').addEventListener('input', () => {
-        document.querySelector('.task2Result')?.remove()
-        button.classList?.remove('button-none')
-    })
-    document.getElementById('CoorX3').addEventListener('input', () => {
-        document.querySelector('.task2Result')?.remove()
-        button.classList?.remove('button-none')
-    })
-    document.getElementById('CoorY1').addEventListener('input', () => {
-        document.querySelector('.task2Result')?.remove()
-        button.classList?.remove('button-none')
-    })
-    document.getElementById('CoorY2').addEventListener('input', () => {
-        document.querySelector('.task2Result')?.remove()
-        button.classList?.remove('button-none')
-    })
-    document.getElementById('CoorY3').addEventListener('input', () => {
-        document.querySelector('.task2Result')?.remove()
-        button.classList?.remove('button-none')
+    }
+
+    listId.forEach(id => {
+        document.getElementById(id).addEventListener('input', handleInput)
     })
 
     button.addEventListener('click', () => {
-        const x1 = parseFloat(document.getElementById("CoorX1").value) || 0
-        const y1 = parseFloat(document.getElementById("CoorY1").value) || 0
-        const x2 = parseFloat(document.getElementById("CoorX2").value) || 0
-        const y2 = parseFloat(document.getElementById("CoorY2").value) || 0
-        const x3 = parseFloat(document.getElementById("CoorX3").value) || 0
-        const y3 = parseFloat(document.getElementById("CoorY3").value) || 0
+        listId.forEach((value, index) => {
+            listInputs[index] = parseFloat(document.getElementById(value).value)
+        })
 
-        if ((x1 === x2 && y1 === y2) || (x1 === x3 && y1 === y3) || (x2 === x3 && y2 === y3)) {
-            const error = `<p class="error">Треугольник не может быть создан</p>`
+        if (
+            (listInputs[0] === listInputs[1] && listInputs[3] === listInputs[4]) || 
+            (listInputs[0] === listInputs[2] && listInputs[3] === listInputs[5]) || 
+            (listInputs[1] === listInputs[2] && listInputs[4] === listInputs[5])
+        ){
             button.className = 'button-none'
             content.insertAdjacentHTML("beforeend", error)
         } else {
-            const square = 0.5*Math.abs((x2-x1)*(y3-y1)-(x3-x1)*(y2-y1))
+            const square = 0.5 * Math.abs(
+                (listInputs[1] - listInputs[0]) * (listInputs[5] - listInputs[3]) -
+                (listInputs[2] - listInputs[1]) * (listInputs[4] - listInputs[3])
+            )
+            
+            if (isNaN(square)) {
+                button.className = 'button-none'
+                content.insertAdjacentHTML("beforeend", error)
+                return
+            }
 
             const result = `<div class="task2Result">
                             <p>Площадь треугольника: <b/>${square}</b></p>
                             </div>`
             button.className = 'button-none'
             content.insertAdjacentHTML("beforeend", result)
-        }
-
-        
-    })        
+        }  
+    })
 }
