@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(71, 64, 116);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 60vw;
+    min-height: 70vh;
+    background-color: rgba(216, 222, 229, 0.25);
+    border-radius: 0.5em;
+    padding: 3em 5em;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation button {
+    padding: 1em 2.125em;
+}
+
+.button-none {
+    display: none;
+}
+
+.task {
+    margin: 1.5em 0;
+}
+
+.inputForm {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 4em 4em 4em;
+    align-items: center;
+    gap: 0 1em;
+}
+
+.task1Result {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    margin-top: 1.5em;
+}
+
+#getSalary {
+    margin: 2em 0;
+}
+
+#getSquare {
+    margin: 2em 0;
+}
+
+/* --------------------task2------------------------ */
+
+.inputForm2 {
+    display: inline-block;
+}
+
+.inputForm2 input {
+    max-width: 100px;
+    margin-right: 1.5em;
+}
+
+.task2Result {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    margin-top: 1.5em;
+}
+
+.error {
+    color: red;
+}

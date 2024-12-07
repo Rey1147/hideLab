@@ -1,0 +1,82 @@
+/* input */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; 
+    appearance: textfield; 
+}
+
+input {
+    max-width: 300px;
+    max-height: 16px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 3.2px solid #ccc;
+    color: rgb(46, 41, 76);
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+input:focus {
+    border-color: #b262e0;
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3)
+}
+
+input:hover {
+    border-color: #b262e0;
+}
+
+/* label */
+label {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px; 
+    transition: all 0.3s ease;
+}
+
+/* button */
+button {
+    background-color: rgb(71, 64, 116);
+    color: white; 
+    font-size: 18px;
+    font-weight: 400;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    outline: none;
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+button:hover {
+    background-color: rgb(93, 85, 145);
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+button:active {
+    background-color: rgb(93, 85, 145); 
+    transform: translateY(2px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* p */
+
+p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0.5em 0;
+    display: block;
+    transition: all 0.3s ease;
+}
