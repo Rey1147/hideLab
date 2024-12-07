@@ -1,6 +1,7 @@
 import { tasks } from "../data.js"
 import { task1 } from "./task1.js"
 import { task2 } from "./task2.js"
+import { task3 } from "./task3.js"
 
 let numTask = 0
 
@@ -21,7 +22,9 @@ const taskSwitch = (index) => {
         case 1: 
             task2();
             break;
-        case 2: '';
+        case 2: 
+            task3();
+            break;
         case 3: '';
         case 4: '';
         case 5: '';

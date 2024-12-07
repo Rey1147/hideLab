@@ -31,7 +31,14 @@ export const tasks = [
     },
     {
         name: 'Задание №3',
-        content: ``
+        content: `<p class='task'>Введите координаты точки</p>
+        <div class='inputForm3'>
+            <label>Координаты точки:</label>
+            <input type="number" placeholder="x" id="x">
+            <input type="number" placeholder="y" id="y">
+        </div>
+        <button id="getСoordinate">Рассчитать</button>
+        `
     },
     {
         name: 'Задание №4',
