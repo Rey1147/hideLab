@@ -102,7 +102,7 @@ body {
 
 .inputForm4 {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2.5fr;
     grid-template-rows: 4em 4em;
     align-items: center;
 }
@@ -113,4 +113,17 @@ body {
 
 #getVariable {
     margin: 2em 0;
+}
+
+/* --------------------task5------------------------ */
+
+.inputForm5 {
+    display: flex;
+    align-items: center;
+    margin: 2em 0;
+    gap: 2em
+}
+
+.inputForm4 input {
+    max-width: 200px;
 }
