@@ -64,7 +64,13 @@ export const tasks = [
     },
     {
         name: 'Задание №6',
-        content: ``
+        content: `<p class='task'>Введите значения радиуса</p>
+        <div class='inputForm6'>
+            <label>Радиус круга:</label>
+            <input type="number" placeholder="10" id="radius">
+        </div>
+        <button id="getСircle">Рассчитать</button>
+        `
     },
     {
         name: 'Задание №7',

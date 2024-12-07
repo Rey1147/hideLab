@@ -115,7 +115,7 @@ body {
     margin: 2em 0;
 }
 
-/* --------------------task5------------------------ */
+/* --------------------task5/task6------------------------ */
 
 .inputForm5 {
     display: flex;
@@ -124,6 +124,17 @@ body {
     gap: 2em
 }
 
-.inputForm4 input {
+.inputForm5 input {
+    max-width: 200px;
+}
+
+.inputForm6 {
+    display: flex;
+    align-items: center;
+    margin: 2em 0;
+    gap: 2em
+}
+
+.inputForm6 input {
     max-width: 200px;
 }
