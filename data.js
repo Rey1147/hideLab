@@ -74,7 +74,19 @@ export const tasks = [
     },
     {
         name: 'Задание №7',
-        content: ``
+        content: `<p class='task'>Введите значения радиуса</p>
+        <div class='inputForm7'>
+            <label>Центр окружности:</label>
+            <input type="number" placeholder="x" id="coorX1">
+            <input type="number" placeholder="y" id="coorY1">
+            <label>Радиус круга:</label>
+            <input type="number" placeholder="r" id="radius">
+            <label>Координаты точки:</label>
+            <input type="number" placeholder="x" id="coorX2">
+            <input type="number" placeholder="y" id="coorY2">
+        </div>
+        <button id="getResult">Рассчитать</button>
+        `
     },
     {
         name: 'Задание №8',

@@ -138,3 +138,21 @@ body {
 .inputForm6 input {
     max-width: 200px;
 }
+
+/* --------------------task7------------------------ */
+
+.inputForm7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4em 4em 4em;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.inputForm7 > *:nth-child(6) {
+    grid-column: 1 
+}
+
+.inputForm7 input {
+    max-width: 200px;
+}
