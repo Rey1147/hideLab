@@ -59,14 +59,13 @@ body {
     margin: 2em 0;
 }
 
-#getSquare {
-    margin: 2em 0;
-}
-
 /* --------------------task2------------------------ */
 
 .inputForm2 {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-rows: 4em 4em 4em;
+    margin: 1em 0;
 }
 
 .inputForm2 input {
