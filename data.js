@@ -42,7 +42,15 @@ export const tasks = [
     },
     {
         name: 'Задание №4',
-        content: ``
+        content: `<p class='task'>Введите значения переменных</p>
+        <div class='inputForm4'>
+            <label>Переменная <b>a</b>:</label>
+            <input type="number" placeholder="a" id="varA">
+            <label>Переменная <b>b</b>:</label>
+            <input type="number" placeholder="b" id="varB">
+        </div>
+        <button id="getVariable">Рассчитать</button>
+        `
     },
     {
         name: 'Задание №5',

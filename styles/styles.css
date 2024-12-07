@@ -97,3 +97,20 @@ body {
 #getСoordinate {
     margin: 2em 0;
 }
+
+/* --------------------task4------------------------ */
+
+.inputForm4 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 4em 4em;
+    align-items: center;
+}
+
+.inputForm4 input {
+    max-width: 200px;
+}
+
+#getVariable {
+    margin: 2em 0;
+}
