@@ -156,3 +156,19 @@ body {
 .inputForm7 input {
     max-width: 200px;
 }
+
+
+/* --------------------task7------------------------ */
+
+.inputForm8 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 4em 4em;
+    align-items: center;
+    margin: 2em 0;
+    gap: 0 1em
+}
+
+.inputForm8 input {
+    max-width: 150px;
+}

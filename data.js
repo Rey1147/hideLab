@@ -90,6 +90,20 @@ export const tasks = [
     },
     {
         name: 'Задание №8',
-        content: ``
+        content: `<p class='task'>Введите координаты двух точек</p>
+        <div class='inputForm8'>
+            <label>Координаты первой точки:</label>
+            <div>
+            <input type="number" placeholder="x1" id="coorX1">
+            <input type="number" placeholder="y1" id="coorY1">
+            </div>
+            <label>Координаты второй точки:</label>
+            <div>
+            <input type="number" placeholder="x2" id="coorX2">
+            <input type="number" placeholder="y2" id="coorY2">
+            </div>
+        </div>
+        <button id="getResult">Рассчитать</button>
+        `
     },
 ]
