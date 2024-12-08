@@ -2,8 +2,6 @@ export const task3 = () => {
     const content = document.getElementById('content')
     const button = document.getElementById('getСoordinate')
     const error = `<p class="error">Введите корректные координаты</p>`
-    console.log('-------------');
-    
 
     document.getElementById('x').addEventListener('input', () => {
         document.querySelector('.taskResult')?.remove()

@@ -4,8 +4,6 @@ export const task7 = () => {
     const error = `<p class="error">Введите корректные значения</p>`
     const customError = `<p class="error">Точка находится внутри окружности, касательная невозможна</p>`
 
-    console.log('----');
-
     const listId = ['coorX1', 'coorY1', 'radius', 'coorX2', 'coorY2']
     const listInputs = {}
 

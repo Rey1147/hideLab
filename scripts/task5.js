@@ -2,7 +2,6 @@ export const task5 = () => {
     const content = document.getElementById('content')
     const button = document.getElementById('getСircle')
     const error = `<p class="error">Введите корректные значения</p>`
-    console.log('----');
 
     document.getElementById('radius').addEventListener('input', () => {
         document.querySelector('.taskResult')?.remove()

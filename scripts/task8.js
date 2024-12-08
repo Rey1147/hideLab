@@ -2,7 +2,6 @@ export const task8 = () => {
     const content = document.getElementById('content')
     const button = document.getElementById('getResult')
     const error = `<p class="error">Введите корректные значения</p>`
-    console.log('----');
 
     const listId = ['coorX1', 'coorY1', 'coorX2', 'coorY2']
     const listInputs = {}

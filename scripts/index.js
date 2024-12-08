@@ -17,7 +17,6 @@ const main = (index) => {
     content.innerHTML = tasks[index].content
     taskSwitch(index)
 }
-console.log('in script')
 
 const taskSwitch = (index) => {
     switch (index) {

@@ -2,7 +2,6 @@ export const task4 = () => {
     const content = document.getElementById('content')
     const button = document.getElementById('getVariable')
     const error = `<p class="error">Введите корректные значения</p>`
-    console.log('----');
 
     document.getElementById('varA').addEventListener('input', () => {
         document.querySelector('.taskResult')?.remove()
